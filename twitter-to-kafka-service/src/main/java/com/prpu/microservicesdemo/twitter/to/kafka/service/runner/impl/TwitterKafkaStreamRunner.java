@@ -1,8 +1,8 @@
-package com.microservices.demo.twitter.to.kafka.service.runner.impl;
+package com.prpu.microservicesdemo.twitter.to.kafka.service.runner.impl;
 
-import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
-import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
-import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
+import com.prpu.microservicesdemo.config.TwitterToKafkaServiceConfigData;
+import com.prpu.microservicesdemo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
+import com.prpu.microservicesdemo.twitter.to.kafka.service.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

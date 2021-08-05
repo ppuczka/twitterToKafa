@@ -1,12 +1,9 @@
-package com.microservices.demo.twitter.to.kafka.service;
+package com.prpu.microservicesdemo.twitter.to.kafka.service;
 
-import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
-import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
-import com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner;
+import com.prpu.microservicesdemo.config.TwitterToKafkaServiceConfigData;
+import com.prpu.microservicesdemo.twitter.to.kafka.service.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +14,7 @@ import java.util.Arrays;
 @SpringBootApplication
 @RequiredArgsConstructor
 @Log4j2
-@ComponentScan(basePackages = "com.microservices.demo")
+@ComponentScan(basePackages = "com.prpu")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
 
