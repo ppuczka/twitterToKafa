@@ -1,4 +1,4 @@
-package com.prpu.microservicesdemo.kafka.admin.config;
+package com.prpu.microservicesdemo.kafka.admin.config.config;
 
 import com.prpu.microservicesdemo.config.KafkaConfigData;
 import lombok.AllArgsConstructor;

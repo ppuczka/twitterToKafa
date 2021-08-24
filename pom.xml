@@ -29,6 +29,7 @@
         <spring-kafka.version>2.7.6</spring-kafka.version>
         <spring-retry.version>1.3.1</spring-retry.version>
         <spring-aop.version>5.3.9</spring-aop.version>
+        <spring-webflux.version>5.3.9</spring-webflux.version>
     </properties>
     <dependencies>
         <dependency>
@@ -78,6 +79,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
             <version>${spring-aop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
 
     </dependencies>
