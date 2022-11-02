@@ -3,7 +3,7 @@ twitter-to-kafka-service:
     - Java
     - Microservices
     - Spring
-    - Kafa
+    - Kafka
     - Elasticsearch
   welcome-message: Welcome to twitter to kafka application
   enable-mock-tweets: true
@@ -27,5 +27,3 @@ kafka-config:
     - twitter-topic
   number-of-partitions: 3
   replication-factor: 3
-
-}

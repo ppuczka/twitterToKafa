@@ -7,8 +7,9 @@
         <module>twitter-to-kafka-service</module>
         <module>app-config-data</module>
         <module>kafka</module>
-        <module>kafka-admin</module>
-        <module>kafka-model</module>
+        <module>kafka/kafka-admin</module>
+        <module>kafka/kafka-model</module>
+        <module>kafka/kafka-producer</module>
         <module>common-config</module>
     </modules>
     <parent>
@@ -32,11 +33,11 @@
         <spring-webflux.version>5.3.9</spring-webflux.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.prpu</groupId>
-            <artifactId>app-config-data</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.prpu</groupId>-->
+<!--            <artifactId>app-config-data</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
