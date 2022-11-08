@@ -30,8 +30,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         log.info("Running...");
         log.info(configData.getWelcomeMessage());
-        log.info("Starting mock filtering twitter streams for keywords {}",
-                Arrays.toString(configData.getTwitterKeywords().toArray(new String[] {})));
+        log.info(Arrays.toString(configData.getTwitterKeywords().toArray(new String[] {})));
         streamRunner.run();
     }
 }

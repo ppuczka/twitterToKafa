@@ -6,10 +6,17 @@ twitter-to-kafka-service:
     - Kafka
     - Elasticsearch
   welcome-message: Welcome to twitter to kafka application
-  enable-mock-tweets: true
+  enable-mock-tweets: false
+  enable-v2-twitter-client: true
   mock-min-tweet-length: 5
   mock-max-tweet-length: 15
   mock-sleep-ms: 10000
+
+  twitter-oauth2-client-id: ${TWITTER_OAUTH2_CLIENT_ID"}
+  twitter-oauth2-client-secret: ${TWITTER_OAUTH2_CLIENT_SECRET}
+  twitter-oauth2-client-access-token: ${TWITTER_OAUTH2_ACCESS_TOKEN}
+  twitter-oauth2-client-refresh-token: ${TWITTER_OAUTH2_REFRESH_TOKEN}
+
 
 retry-config:
   initial-interval-ms: 1000

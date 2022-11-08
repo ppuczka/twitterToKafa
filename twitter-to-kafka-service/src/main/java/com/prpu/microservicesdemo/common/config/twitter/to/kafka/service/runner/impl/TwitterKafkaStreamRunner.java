@@ -13,6 +13,8 @@ import twitter4j.TwitterStreamFactory;
 
 import javax.annotation.PreDestroy;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -33,7 +35,10 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     }
     @PreDestroy
     public void shutdown() {
-
+        if (stream != null) {
+            log.info("Closing stream");
+            stream.shutdown();
+        }
     }
 
     private void addFilter() {

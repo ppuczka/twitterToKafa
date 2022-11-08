@@ -18,4 +18,10 @@ public class TwitterToKafkaServiceConfigData {
     private Integer mockMaxTweetLength;
     private Long mockSleepMs;
     private Boolean enableMockTweets;
+
+    private String twitterOAuth2ClientId;
+    private String twitterOAuth2ClientSecret;
+    private String twitterOAuth2ClientAccessToken;
+    private String twitterOAuth2ClientRefreshToken;
+
 }
