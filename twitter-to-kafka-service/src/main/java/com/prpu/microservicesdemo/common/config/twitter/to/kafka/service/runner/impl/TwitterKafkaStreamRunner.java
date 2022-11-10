@@ -1,8 +1,8 @@
 package com.prpu.microservicesdemo.common.config.twitter.to.kafka.service.runner.impl;
 
-import com.prpu.microservicesdemo.config.TwitterToKafkaServiceConfigData;
 import com.prpu.microservicesdemo.common.config.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
 import com.prpu.microservicesdemo.common.config.twitter.to.kafka.service.runner.StreamRunner;
+import com.prpu.microservicesdemo.config.TwitterToKafkaServiceConfigData;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -13,13 +13,11 @@ import twitter4j.TwitterStreamFactory;
 
 import javax.annotation.PreDestroy;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
 @Log4j2
-@ConditionalOnProperty(name = "twitter-to-kafka-service.enable-mock-tweets", havingValue = "false", matchIfMissing = true)
+@ConditionalOnProperty(name = "v1twitter-to-kafka-service", havingValue = "true", matchIfMissing = false)
 public class TwitterKafkaStreamRunner implements StreamRunner {
 
     private final TwitterToKafkaServiceConfigData configData;

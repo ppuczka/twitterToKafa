@@ -23,5 +23,7 @@ public class TwitterToKafkaServiceConfigData {
     private String twitterOAuth2ClientSecret;
     private String twitterOAuth2ClientAccessToken;
     private String twitterOAuth2ClientRefreshToken;
+    private String twitterOAuth2ClientBearerToken;
+
 
 }
